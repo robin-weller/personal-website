@@ -3,32 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Robin Weller – .NET Developer</title>
+  <title>Robin – Freelance .NET Backend Developer</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section id="intro">
-    <h1>Hi, I'm Robin!</h1>
-    <p>.NET Backend Engineer available for freelance .</p>
-  </section>
+  <header class="hero">
+    <div class="container">
+      <h1>Hi, I'm Robin</h1>
+      <p class="subtitle">Freelance .NET Backend Developer available for part-time contracts</p>
+    </div>
+  </header>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/mrbkjwke" method="POST">
-      <label>
-        Your Name:<br/>
-        <input type="text" name="name" required />
-      </label><br/>
-      <label>
-        Your Email:<br/>
-        <input type="email" name="_replyto" required />
-      </label><br/>
-      <label>
-        Message:<br/>
-        <textarea name="message" rows="5" required></textarea>
-      </label><br/>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+  <main class="container">
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/mrbkjwke" method="POST" class="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="_replyto" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Robin – Built with HTML & CSS, hosted on GitHub Pages</p>
+  </footer>
 </body>
 </html>
